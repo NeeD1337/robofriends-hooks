@@ -1,5 +1,6 @@
 {
   "name": "robotfriends",
+  "homepage": "https://NeeD1337.github.io/robofriends-hooks",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -7,10 +8,13 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@rbnd/react-dark-mode": "^2.0.2",
+    "gh-pages": "^6.3.0",
     "ldrs": "^1.1.7",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
